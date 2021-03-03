@@ -1,0 +1,419 @@
+
+/*--------------------------------ここからreset.css----------------------------------------------------------*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+p,.nav{
+    margin:0;
+}
+/*-----------------------------------ここまでreset.css------------------------------------------------------------*/
+
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#111;
+    cursor:pointer;
+    transition-duration:1s;
+}
+a:hover{
+    opacity:0.5;
+    transition-duration:0.8s;
+}
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+.header {
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+.header__menu{
+    position:relative;
+}
+.navi-pc{
+    display: none;
+}
+.firstview-title{
+    position:absolute;
+    top:23%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+.header-logo{
+    width: 92px;
+    position:absolute;
+    left:20px;
+    top:15px;
+}
+.line {
+    width: 20px;
+    height: 15px;
+    position:fixed;
+    right:20px;
+    top:28px;
+    cursor: pointer;
+}
+.header-wrap{
+    background-image:url("../images/first-image.jpg");
+    height: 45vh;
+    background-size:cover;
+    background-position:center;
+}
+header span {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    display: block;
+    transition: .6s;
+    position: absolute;
+}
+header span:first-child {
+    top: 0;
+}
+header span:nth-child(2) {
+    top: 6.5px;
+}
+header span:last-child {
+    bottom: 0;
+}
+.is-active span:first-child {
+    transform: rotate(45deg);
+    top: 50%;
+    transition: .6s;
+}
+.is-active span:nth-child(2) {
+    opacity: 0;
+    transition: .6s;
+}
+.is-active span:last-child{
+    transform: rotate(-45deg);
+    top: 50%;
+    transition: .6s;
+}
+.navi {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color:rgba(75,75,75,0.8);
+}
+.navi_wrap {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    padding: 60px 0;
+    width: 250px;
+}
+.navi_wrap a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 100px;
+    font-size: 18px;
+}
+.information__block{
+    margin-top: 40px;
+}
+.information,.construct{
+    padding: 0 20px;
+    margin-top: 60px;
+}
+.information__title{
+    font-size: 24px;
+    text-align: center;
+}
+.information__date{
+    font-size: 13px;
+}
+.information__message{
+    font-size: 13px;
+    padding: 8px;
+    margin-left: 40px;
+    border:1px solid #111;
+}
+.information__content{
+    font-size: 18px;
+}
+.information-flexbox{
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.information__list{
+    border-bottom:1px solid #111;
+    padding-bottom: 30px;
+}
+.construct__image,.construct__details{
+    width: 100%;
+}
+.construct__title{
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+}
+.construct__location{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.construct li{
+    margin-bottom: 40px;
+}
+.performances{
+    width: 200px;
+    margin:0 auto;
+    text-align: center;
+    padding: 10px 0;
+    border:1px solid #111;
+    
+}
+.performances a{
+    font-size: 20px;
+}
+.company{
+    margin-top: 60px;
+}
+.company__image{
+    width: 100%;
+    vertical-align:bottom;
+}
+footer{
+    background-color:#111;
+    padding: 40px 0 10px 0;
+}
+footer ul{
+    display: flex;
+    flex-direction:column;
+
+}
+footer a{
+    font-size: 18px;
+    color:#fff;
+}
+footer li{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.footer-logo{
+    width: 94px;
+    display: block;
+    margin:0 auto; 
+}
+footer p{
+    font-size: 12px;
+    text-align: center;
+    color:#fff;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .header-wrap{
+        height: 50vh;
+    }
+    .construct__details {
+        width: 40%;
+        display: block;
+        margin:0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .header-wrap{
+        height: 80vh;
+     }
+    .firstview-title {
+        font-size: 48px;
+        top: 40%;
+    }
+    .line{
+        display: none;
+    }
+    .navi-pc{
+        display: block;
+        position:absolute;
+        right:10%;
+        top:50px;
+        z-index:10;
+    }
+    .navi__flexbox{
+        display: flex;
+    }
+    .navi__flexbox li{
+        margin-left: 60px;
+    }
+    .navi__flexbox a{
+        font-size: 18px;
+    }
+    .header-logo{
+        width: 139px;
+        top:30px;
+        left:10%;
+    }
+    .information__title,.construct__title{
+        font-size: 38px;
+    }
+    .information__block{
+        width: 700px;
+        margin:0 auto;
+    }
+    .information__link{
+        display: flex;
+    }
+    .information__content{
+        margin-top: 7px;
+        margin-left: 30px;
+    }
+    .information__list{
+        padding: 20px 0;
+    }
+    .information__title{
+        margin-bottom: 40px;
+    }
+    .construct__flexbox{
+        max-width:1100px;
+        display: flex;
+        justify-content:space-between;
+        margin:60px auto 0;
+    }
+    .construct__block{
+        width: 45%;
+    }
+    .information{
+        margin-top: 100px;
+    }
+    .construct{
+        margin-top: 150px;
+    }
+    .performances{
+        margin-top: 50px;
+    }
+    .company{
+        display: flex;
+        margin-top: 150px;
+    }
+    .company a{
+        display: block;
+    }
+    .list__flexbox{
+        display: flex;
+        margin-top:15px;
+    }
+    .list__flexbox li{
+        margin-left: 50px;
+    }
+    .footer__flexbox{
+        display: flex;
+        justify-content:space-between;
+        max-width:1100px;
+        margin:0 auto;
+    }
+    .order1{order:2;}
+    .order2{order:1;}
+}
